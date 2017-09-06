@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<MethodSetup Method="LD::LD">
+  <GeneralInfo>
+    <Info name="TMVA Release" value="4.2.0 [262656]"/>
+    <Info name="ROOT Release" value="5.34/36 [336420]"/>
+    <Info name="Creator" value="leure"/>
+    <Info name="Date" value="Tue Jul 25 21:37:52 2017"/>
+    <Info name="Host" value="Linux lcgapp-slc6-x86-64-23.cern.ch 2.6.32-573.18.1.el6.x86_64 #1 SMP Wed Feb 10 14:02:50 CET 2016 x86_64 x86_64 x86_64 GNU/Linux"/>
+    <Info name="Dir" value="/data/leure/bsTMVACDozen/myTMVA"/>
+    <Info name="Training events" value="1209"/>
+    <Info name="TrainingTime" value="7.11917877e-04"/>
+    <Info name="AnalysisType" value="Classification"/>
+  </GeneralInfo>
+  <Options>
+    <Option name="V" modified="Yes">False</Option>
+    <Option name="VerbosityLevel" modified="No">Default</Option>
+    <Option name="VarTransform" modified="Yes">None</Option>
+    <Option name="H" modified="Yes">True</Option>
+    <Option name="CreateMVAPdfs" modified="Yes">True</Option>
+    <Option name="IgnoreNegWeightsInTraining" modified="No">False</Option>
+  </Options>
+  <Variables NVar="4">
+    <Variable VarIndex="0" Expression="Bchi2cl" Label="Bchi2cl" Title="Bchi2cl" Unit="" Internal="Bchi2cl" Type="F" Min="1.00242589e-02" Max="9.99844372e-01"/>
+    <Variable VarIndex="1" Expression="BsvpvDistance/BsvpvDisErr" Label="BsvpvDistance/BsvpvDisErr" Title="BsvpvDistance/BsvpvDisErr" Unit="" Internal="BsvpvDistance_D_BsvpvDisErr" Type="F" Min="1.30181634e+00" Max="1.56777710e+03"/>
+    <Variable VarIndex="2" Expression="Bd0/Bd0Err" Label="Bd0/Bd0Err" Title="Bd0/Bd0Err" Unit="" Internal="Bd0_D_Bd0Err" Type="F" Min="1.01687401e+02" Max="5.87745977e+04"/>
+    <Variable VarIndex="3" Expression="Blxy" Label="Blxy" Title="Blxy" Unit="" Internal="Blxy" Type="F" Min="2.52494588e-02" Max="1.48439598e+00"/>
+  </Variables>
+  <Spectators NSpec="0"/>
+  <Classes NClass="2">
+    <Class Name="Signal" Index="0"/>
+    <Class Name="Background" Index="1"/>
+  </Classes>
+  <Transformations NTransformations="0"/>
+  <MVAPdfs>
+    <PDF Name="LD_PDFSig" MinNSmooth="10" MaxNSmooth="10" InterpolMethod="2" KDE_type="1" KDE_iter="1" KDE_border="1" KDE_finefactor="1.0000000000000000e+00">
+      <Histogram Name="LD_tr_S_original" NBins="50" XMin="-1.2102872878313065e-01" XMax="1.9916312694549561e+00" HasEquidistantBins="1">
+        2.97526071e-01 1.16305646e+00 1.78515643e+00 2.16382597e+00 2.32611292e+00 2.21792162e+00 2.35316074e+00 2.35316074e+00 2.89411724e+00 1.83925208e+00 1.08191299e+00 9.46673862e-01 6.49147791e-01 4.32765194e-01 2.16382597e-01 2.97526071e-01 1.08191299e-01 1.08191299e-01 1.62286948e-01 5.40956493e-02 0.00000000e+00 2.70478246e-02 2.70478246e-02 0.00000000e+00 5.40956493e-02 2.70478246e-02 2.70478246e-02 0.00000000e+00 0.00000000e+00 0.00000000e+00 2.70478246e-02 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 2.70478246e-02 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 
+      </Histogram>
+    </PDF>
+    <PDF Name="LD_PDFBkg" MinNSmooth="10" MaxNSmooth="10" InterpolMethod="2" KDE_type="1" KDE_iter="1" KDE_border="1" KDE_finefactor="1.0000000000000000e+00">
+      <Histogram Name="LD_tr_B_original" NBins="50" XMin="-1.2102872878313065e-01" XMax="1.9916312694549561e+00" HasEquidistantBins="1">
+        5.54358568e+00 5.04608440e+00 3.05607928e+00 2.55857801e+00 1.49250384e+00 1.56357545e+00 1.20821739e+00 1.99000512e+00 4.97501279e-01 3.55358056e-01 1.42143223e-01 7.10716113e-02 0.00000000e+00 7.10716113e-02 0.00000000e+00 7.10716113e-02 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 
+      </Histogram>
+    </PDF>
+  </MVAPdfs>
+  <Weights NOut="1" NCoeff="5">
+    <Coefficient IndexOut="0" IndexCoeff="0" Value="-1.3693238447216674e-01"/>
+    <Coefficient IndexOut="0" IndexCoeff="1" Value="3.4884396271617257e-01"/>
+    <Coefficient IndexOut="0" IndexCoeff="2" Value="2.2501058330547642e-04"/>
+    <Coefficient IndexOut="0" IndexCoeff="3" Value="2.9198218523687237e-05"/>
+    <Coefficient IndexOut="0" IndexCoeff="4" Value="1.3938524714433953e-01"/>
+  </Weights>
+</MethodSetup>

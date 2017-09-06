@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<MethodSetup Method="LD::LD">
+  <GeneralInfo>
+    <Info name="TMVA Release" value="4.2.0 [262656]"/>
+    <Info name="ROOT Release" value="5.34/36 [336420]"/>
+    <Info name="Creator" value="leure"/>
+    <Info name="Date" value="Wed Jul 26 16:22:39 2017"/>
+    <Info name="Host" value="Linux lcgapp-slc6-x86-64-23.cern.ch 2.6.32-573.18.1.el6.x86_64 #1 SMP Wed Feb 10 14:02:50 CET 2016 x86_64 x86_64 x86_64 GNU/Linux"/>
+    <Info name="Dir" value="/data/leure/bsTMVACDozen/myTMVA"/>
+    <Info name="Training events" value="34803"/>
+    <Info name="TrainingTime" value="5.92970848e-02"/>
+    <Info name="AnalysisType" value="Classification"/>
+  </GeneralInfo>
+  <Options>
+    <Option name="V" modified="Yes">False</Option>
+    <Option name="VerbosityLevel" modified="No">Default</Option>
+    <Option name="VarTransform" modified="Yes">None</Option>
+    <Option name="H" modified="Yes">True</Option>
+    <Option name="CreateMVAPdfs" modified="Yes">True</Option>
+    <Option name="IgnoreNegWeightsInTraining" modified="No">False</Option>
+  </Options>
+  <Variables NVar="11">
+    <Variable VarIndex="0" Expression="Btrk1Pt" Label="Btrk1Pt" Title="Btrk1Pt" Unit="" Internal="Btrk1Pt" Type="F" Min="5.00000238e-01" Max="1.72004528e+01"/>
+    <Variable VarIndex="1" Expression="Btrk2Pt" Label="Btrk2Pt" Title="Btrk2Pt" Unit="" Internal="Btrk2Pt" Type="F" Min="5.00023544e-01" Max="1.80035973e+01"/>
+    <Variable VarIndex="2" Expression="Bchi2cl" Label="Bchi2cl" Title="Bchi2cl" Unit="" Internal="Bchi2cl" Type="F" Min="1.00008454e-02" Max="9.99997914e-01"/>
+    <Variable VarIndex="3" Expression="BsvpvDistance/BsvpvDisErr" Label="BsvpvDistance/BsvpvDisErr" Title="BsvpvDistance/BsvpvDisErr" Unit="" Internal="BsvpvDistance_D_BsvpvDisErr" Type="F" Min="1.00275967e-02" Max="5.24563525e+03"/>
+    <Variable VarIndex="4" Expression="Bd0/Bd0Err" Label="Bd0/Bd0Err" Title="Bd0/Bd0Err" Unit="" Internal="Bd0_D_Bd0Err" Type="F" Min="7.15755939e-01" Max="5.87745977e+04"/>
+    <Variable VarIndex="5" Expression="cos(Bdtheta)" Label="cos(Bdtheta)" Title="cos(Bdtheta)" Unit="" Internal="cos_Bdtheta_" Type="F" Min="-1.00000000e+00" Max="1.00000000e+00"/>
+    <Variable VarIndex="6" Expression="Bmu1pt" Label="Bmu1pt" Title="Bmu1pt" Unit="" Internal="Bmu1pt" Type="F" Min="7.17000067e-01" Max="5.63763084e+01"/>
+    <Variable VarIndex="7" Expression="Bmu2pt" Label="Bmu2pt" Title="Bmu2pt" Unit="" Internal="Bmu2pt" Type="F" Min="7.11423755e-01" Max="5.03804474e+01"/>
+    <Variable VarIndex="8" Expression="Bpt" Label="Bpt" Title="Bpt" Unit="" Internal="Bpt" Type="F" Min="2.81025395e-02" Max="1.17906815e+02"/>
+    <Variable VarIndex="9" Expression="abs(Btktkmass-1.019455)" Label="abs(Btktkmass-1.019455)" Title="abs(Btktkmass-1.019455)" Unit="" Internal="abs_Btktkmass_M_1.019455_" Type="F" Min="4.01573175e-07" Max="9.99938995e-02"/>
+    <Variable VarIndex="10" Expression="Blxy" Label="Blxy" Title="Blxy" Unit="" Internal="Blxy" Type="F" Min="-1.29130825e-01" Max="2.32892299e+00"/>
+  </Variables>
+  <Spectators NSpec="0"/>
+  <Classes NClass="2">
+    <Class Name="Signal" Index="0"/>
+    <Class Name="Background" Index="1"/>
+  </Classes>
+  <Transformations NTransformations="0"/>
+  <MVAPdfs>
+    <PDF Name="LD_PDFSig" MinNSmooth="10" MaxNSmooth="10" InterpolMethod="2" KDE_type="1" KDE_iter="1" KDE_border="1" KDE_finefactor="1.0000000000000000e+00">
+      <Histogram Name="LD_tr_S_original" NBins="50" XMin="-1.9513863325119019e-01" XMax="5.6253232955932617e+00" HasEquidistantBins="1">
+        0.00000000e+00 1.75224548e-02 5.21293031e-01 1.84861898e+00 1.82233530e+00 1.44998314e+00 9.68115629e-01 5.73860396e-01 3.41687869e-01 3.19784801e-01 2.19030685e-01 1.27037798e-01 1.00754115e-01 7.00898193e-02 4.81867508e-02 4.38061371e-02 4.81867508e-02 1.75224548e-02 1.31418411e-02 1.31418411e-02 4.38061371e-03 4.38061371e-03 0.00000000e+00 8.76122741e-03 0.00000000e+00 4.38061371e-03 4.38061371e-03 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 
+      </Histogram>
+    </PDF>
+    <PDF Name="LD_PDFBkg" MinNSmooth="10" MaxNSmooth="10" InterpolMethod="2" KDE_type="1" KDE_iter="1" KDE_border="1" KDE_finefactor="1.0000000000000000e+00">
+      <Histogram Name="LD_tr_B_original" NBins="50" XMin="-1.9513863325119019e-01" XMax="5.6253232955932617e+00" HasEquidistantBins="1">
+        1.04734617e+00 5.65054243e+00 1.72691793e+00 1.16924010e-01 2.69422216e-02 8.37039893e-03 4.70834940e-03 1.56944980e-03 2.09259973e-03 1.04629987e-03 5.23149933e-04 5.23149933e-04 2.61574967e-04 7.84724900e-04 7.84724900e-04 0.00000000e+00 2.61574967e-04 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 2.61574967e-04 2.61574967e-04 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 2.61574967e-04 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 
+      </Histogram>
+    </PDF>
+  </MVAPdfs>
+  <Weights NOut="1" NCoeff="12">
+    <Coefficient IndexOut="0" IndexCoeff="0" Value="-2.3189852706708470e-02"/>
+    <Coefficient IndexOut="0" IndexCoeff="1" Value="5.3971437039848288e-02"/>
+    <Coefficient IndexOut="0" IndexCoeff="2" Value="3.9179615025440526e-02"/>
+    <Coefficient IndexOut="0" IndexCoeff="3" Value="2.6215726517384897e-02"/>
+    <Coefficient IndexOut="0" IndexCoeff="4" Value="1.2527946026495173e-04"/>
+    <Coefficient IndexOut="0" IndexCoeff="5" Value="6.2571926954245818e-05"/>
+    <Coefficient IndexOut="0" IndexCoeff="6" Value="2.4444645574747292e-02"/>
+    <Coefficient IndexOut="0" IndexCoeff="7" Value="-2.3272474034886692e-02"/>
+    <Coefficient IndexOut="0" IndexCoeff="8" Value="-2.3577533266828161e-02"/>
+    <Coefficient IndexOut="0" IndexCoeff="9" Value="1.8872565312002119e-02"/>
+    <Coefficient IndexOut="0" IndexCoeff="10" Value="-1.3301993229073306e+00"/>
+    <Coefficient IndexOut="0" IndexCoeff="11" Value="4.6619574560788379e-01"/>
+  </Weights>
+</MethodSetup>
